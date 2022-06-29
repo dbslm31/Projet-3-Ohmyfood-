@@ -14,16 +14,16 @@
     <!--Balise Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&family=Shrikhand&display=swap"
-        rel="stylesheet">
-    <!--Balise pour liée Font Awesome à index.html-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e2c51475f0.js" crossorigin="anonymous"></script>
     <title>Ohmyfood! Des menus d'exceptions, simplement.</title>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="images/logo/ohmyfood.png" alt="logo ohmyfood">
+        <div class="logo_container">
+            <img class="logo" src="images/logo/ohmyfood.png" alt="logo ohmyfood">
+        </div>
     </header>
 
     <section class="reservation">
@@ -37,7 +37,49 @@
             <button>Explorez nos restaurants</button>
         </div>
     </section>
-    
+
+    <section class="function">
+        <div class="function_title">
+            <h2>Fonctionnement</h2>
+        </div>
+        <!--Cards Function-->
+        <div class="all_function_cards">
+            <!--Function card Choose your restaurant-->
+            <div class="function_card">
+                <div class="number_icon">
+                    <i class="fa-solid fa-circle-1 fa-xs"></i>
+                </div>
+                <div class="card_body">
+                    <i class="fa-solid fa-mobile-screen-button fa-xs"></i>
+                    <p>Choisissez un restaurant</p>
+                </div>
+            </div>
+            <!--End Function card Choose your restaurant-->
+            <!--Function card compose your menu-->
+            <div class="function_card">
+                <div class="number_icon">
+                    <i class="fa-solid fa-circle-2 fa-xs"></i>
+                </div>
+                <div class="card_body">
+                    <i class="fa-solid fa-list fa-xs"></i>
+                    <p>Composez votre menu</p>
+                </div>
+            </div>
+            <!--End function card compose your menu-->
+            <!--Function card enjoy at the restaurant-->
+            <div class="function_card">
+                <div class="number_icon">
+                    <i class="fa-solid fa-circle-3 fa-xs"></i>
+                </div>
+                <div class="card_body">
+                    <i class="fa-solid fa-store fa-xs"></i>
+                    <p>Dégustez au restaurant</p>
+                </div>
+            </div>
+            <!--End Function card enjoy at the restaurant-->
+        </div>
+        <!--End Cards Function-->
+    </section>
 
 </body>
 
