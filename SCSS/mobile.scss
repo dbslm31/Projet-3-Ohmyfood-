@@ -13,6 +13,7 @@ $purple : #9356DC;
 $pink : #FF79DA;
 $green : #99E2D0;
 $gray : #eaeaea;
+$darkgray : #353535;
 $lightgray : #f6f6f6;
 $lightpurple : #f5edff;
 
@@ -101,7 +102,7 @@ body {
 // Function Style //
 
 .function {
-
+    margin-bottom:20px;
     .function__title {
         margin: $margin-m
     }
@@ -148,7 +149,8 @@ body {
 // Restaurant Styles //
 
 .restaurants__title {
-    margin:$margin-m;
+    margin-left:20px;
+    margin-top:20px;
 }
 
 .restaurants__allcards {
@@ -173,7 +175,86 @@ body {
                 object-fit: cover;
             }
         }
+
+        .restaurants__cards--body{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin:$margin-s;
+
+            .restaurants__cards--body-heart {
+                
+            }
+
+            .restaurants__cards--body-text h3 {
+                padding-bottom:5px;
+            }
+        }
     }
 
 
 }
+
+.footer {
+    background-color: $darkgray;
+    margin:0;
+    padding-bottom:10px;
+    width:100%;
+
+    .footer__logo_container {
+        
+
+        .footer__logo {
+            margin:$margin-s;
+            width:130px;
+            fill:white;
+    
+        }
+
+    }
+
+    .footer__nav {
+
+        margin-left:25px;
+        
+        
+
+        .footer__nav--list {
+
+            
+
+            .footer__nav--list-item-icon{
+                color:white;
+                display : flex;
+                align-items: center;
+                margin-bottom:10px;
+
+                i{
+                    margin-right:10px;
+                }
+            }
+
+            .footer__nav--list-item-icon_hand{
+                color:white;
+                display : flex;
+                align-items: center;
+                margin-bottom:10px;
+
+                i{
+                    margin-right:5px;
+                }
+
+            }
+
+            .footer__nav--list-item {
+                list-style: none;
+                color:white;
+                margin-bottom:10px;
+            }
+
+        }
+    }
+
+}
+
+
