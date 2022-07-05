@@ -4,6 +4,7 @@
 
 $margin-s : 20px;
 $margin-m : 30px 20px;
+$margin-l: 40px 20px;
 $padding-s: 10px;
 $padding-m: 20px;
 
@@ -11,8 +12,10 @@ $padding-m: 20px;
 
 $purple : #9356DC;
 $pink : #FF79DA;
+$lightpink:#ffbcec;
 $green : #99E2D0;
 $gray : #eaeaea;
+$midgray:#c8c8c8;
 $darkgray : #353535;
 $lightgray : #f6f6f6;
 $lightpurple : #f5edff;
@@ -40,7 +43,7 @@ body {
 .logo_container {
     display: flex;
     justify-content: center;
-    margin: $margin-m;
+    margin: $margin-l;
 
 
     .logo_container__logo {
@@ -48,10 +51,18 @@ body {
     }
 }
 
+.main_content {
+    margin:auto;
+    width:86%;
+    display:flex;
+    flex:1;
+}
+
 // Reservation Style //
 
 .reservation {
     margin: auto;
+    margin-bottom:40px;
     width:86%;
     padding:$padding-m;
     background-color:$gray;
@@ -107,29 +118,33 @@ body {
             color: #fff;
             font-size: 15px;
             font-weight: 700;
-            background: linear-gradient(175deg, $pink, 70%, $purple);
-            box-shadow: 5px 7px 5px $gray;
+            box-shadow: 5px 5px 7px $midgray;
+            background-image: linear-gradient(175deg, $pink, 70%, $purple);
+            
         }
+        
+    
     }
 }
 
 // Function Style //
 
 .function {
-    margin:auto;
-    width:90%;
+    margin:0;
+    width:40%;
     .function__title {
         margin: $margin-m
     }
 
     .function__list {
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        margin-top:60px;
 
         .function__list--card {
-            width: 80%;
+            width: 90%;
             margin: 0 20px 20px 20px;
             padding: 20px;
             display: flex;
@@ -164,8 +179,9 @@ body {
 
 // Restaurant Styles //
 .restaurants {
-    margin:auto;
-    width:90%;
+    margin-left:50px;
+    width:60%;
+
 
 .restaurants__title {
     margin: $margin-m;
@@ -174,12 +190,13 @@ body {
 .restaurants__allcards {
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 20px;
     margin-top : 10px;
 
     .restaurants__allcards--card {
-        margin:$margin-s;
+        margin:$margin-m;
         width:100%;
         border-radius: $radius-bottom;
         box-shadow: 5px 7px 5px $gray;
@@ -225,12 +242,12 @@ body {
     align-items: center;
 
     .footer__logo_container {
-        margin-right:100px;
+        margin-right:130px;
         
 
         .footer__logo {
             margin:$margin-s;
-            width:130px;
+            width:120px;
             fill:white;
     
         }
@@ -239,7 +256,7 @@ body {
 
     .footer__nav {
 
-        margin-left:100px;
+        margin-left:120px;
         margin-top:30px;
         margin-bottom: 20px;
         
