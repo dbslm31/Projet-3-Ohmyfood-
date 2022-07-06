@@ -234,6 +234,22 @@ body {
             .restaurants__cards--body-text h3 {
                 padding-bottom:5px;
             }
+
+            .restaurants__cards--body-heart  {
+                width:30px;
+                fill:transparent;
+                stroke-width:25;
+                stroke:#000;
+                transition: fill 1.5s;
+
+                &:hover {
+                    cursor: pointer;
+                    fill:$purple;
+                    stroke:$purple;
+                    transform : scale(1);
+                }
+
+            }
         }
     }
 
