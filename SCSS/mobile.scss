@@ -4,6 +4,7 @@
 
 $margin-s : 20px;
 $margin-m : 30px 20px;
+$margin-l: 40px 20px;
 $padding-s: 10px;
 $padding-m: 20px;
 
@@ -14,6 +15,7 @@ $pink : #FF79DA;
 $green : #99E2D0;
 $gray : #eaeaea;
 $darkgray : #353535;
+$midgray:#c8c8c8;
 $lightgray : #f6f6f6;
 $lightpurple : #f5edff;
 
@@ -27,13 +29,15 @@ $radius-bottom : 0 0 20px 20px;
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 body {
     font-family: 'Roboto', sans-serif;
+    position:relative;
+
 }
 
-//Loader Style//
 
 //Loader Style//
 
@@ -97,8 +101,9 @@ body {
 
 .main_content {
     margin:auto;
-    width:86%;
+    width:100%;
     display:flex;
+    flex-direction: column;
     flex:1;
 }
 
