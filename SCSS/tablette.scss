@@ -40,8 +40,8 @@ body {
 }
 
 .loader {
-    position:fixed;
-    top:50%;
+    position:fixed !important;
+    top:0%;
     left:50%;
     transform: translate(-50%, -50%);
     width:100%;
@@ -84,6 +84,53 @@ body {
 
 
 
+//Loader Style//
+
+.loader {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    height:100vh;
+    background-image: linear-gradient(to bottom, #fff, 85%, $lightpurple);
+    opacity: 99%;
+    animation: fade-out 5s;
+    animation-fill-mode: forwards;
+
+    @keyframes fade-out {
+        0%{
+            opacity: 100%;
+            
+        }
+
+        50%{
+            opacity: 100%;
+            
+        }
+
+
+        100%{
+            opacity: 0%; 
+            visibility:hidden;
+        }
+    }
+
+
+    .loader_icon{
+        position:absolute;
+        top:50%;
+        left:50%;
+        color:$purple;
+        width:300px;
+        height:300px;
+        opacity : 100%;
+    }
+}
+
+
+
+
 //Header Style//
 
 .logo_container {
@@ -122,16 +169,29 @@ body {
 // Reservation Style //
 
 .reservation {
-    margin: 0;
+    margin: auto;
+    margin-bottom:40px;
+    width:86%;
+    padding:$padding-m;
+    background-color:$gray;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 
     .reservation__location {
-        background-color: $gray;
+        background-color: white;
+        margin-top:15px;
         padding: $padding-s;
+        border-radius: 15px;
+        width:40%;
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
+
 
         p {
             padding: 0 0 0 20px;
@@ -139,7 +199,7 @@ body {
     }
 
     .reservation__explore {
-        margin: $margin-m;
+        margin: $margin-s;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -158,7 +218,7 @@ body {
         }
 
         button {
-            width: 65%;
+            width: 60%;
             padding: 17px 15px;
             align-items: center;
             border: none;
@@ -179,9 +239,10 @@ body {
 
 
             }
-
-
+            
         }
+        
+    
     }
 }
 
@@ -204,6 +265,7 @@ body {
             padding: 20px;
             position:relative;
             display: flex;
+            justify-content: center;
             align-items: center;
             background-color: $lightgray;
             border-radius: 20px;
@@ -224,7 +286,7 @@ body {
                 height:25px;
                 border-radius: 50%;
                 position:absolute;
-                left:-3%;
+                left:-1%;
             }
   
 
@@ -258,13 +320,15 @@ body {
 }
 
 .restaurants__allcards {
+    width:100%;
     display:flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-bottom: 20px;
 
     .restaurants__allcards--card {
-        flex:1;
+        width:80%;
         margin:$margin-s;
         border-radius: $radius-bottom;
         box-shadow: 5px 7px 5px $gray;
@@ -277,7 +341,7 @@ body {
             padding: 8px 15px;
             border:none;
             position:absolute;
-            left:70%;
+            left:80%;
             top:3%;
         }
 
@@ -328,16 +392,21 @@ body {
 
 .footer {
     background-color: $darkgray;
-    margin:0;
-    padding-bottom:10px;
+    margin:auto;
     width:100%;
+    padding-bottom:10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 
     .footer__logo_container {
+        margin-right:130px;
         
 
         .footer__logo {
             margin:$margin-s;
-            width:130px;
+            width:120px;
             fill:white;
     
         }
@@ -346,7 +415,11 @@ body {
 
     .footer__nav {
 
-        margin-left:25px;
+        margin-left:120px;
+        margin-top:30px;
+        margin-bottom: 20px;
+        
+
         
         
 
