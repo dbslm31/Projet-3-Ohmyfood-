@@ -1,5 +1,6 @@
 //Library  Sass//
 
+
 /*Margin*/
 
 $margin-s : 20px;
@@ -14,6 +15,7 @@ $purple : #9356DC;
 $pink : #FF79DA;
 $lightpink:#ffbcec;
 $green : #99E2D0;
+$darkgreen:#269d80;
 $gray : #eaeaea;
 $midgray:#c8c8c8;
 $darkgray : #353535;
@@ -211,6 +213,13 @@ body {
             border-radius: 20px;
             box-shadow: 5px 7px 5px $gray;
 
+
+            &:hover {
+                cursor: pointer;
+                background-color: $lightpurple;
+            }
+
+
             .card__number_icon {
                 background-color: $purple;
                 color:#fff;
@@ -241,6 +250,9 @@ body {
                 .card__body--icon {
                     color: darkgray;
                     padding-right: 20px;
+
+                    
+
                 }
             }
 
@@ -272,6 +284,19 @@ body {
         width:100%;
         border-radius: $radius-bottom;
         box-shadow: 5px 7px 5px $gray;
+        position:relative;
+
+        .button_new {
+            background-color: $green;
+            color: $darkgreen;
+            font-weight: 600;
+            padding: 8px 15px;
+            border:none;
+            position:absolute;
+            left:85%;
+            top:3%;
+
+        }
     
 
         .restaurants__cards--img {
