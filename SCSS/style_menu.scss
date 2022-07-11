@@ -1,0 +1,79 @@
+//Library  Sass//
+
+
+/*Margin*/
+
+$margin-s : 20px;
+$margin-m : 30px 20px;
+$margin-l: 40px 20px;
+$padding-s: 10px;
+$padding-m: 20px;
+
+/*Colors*/
+
+$purple : #9356DC;
+$pink : #FF79DA;
+$lightpink:#ffbcec;
+$green : #99E2D0;
+$darkgreen:#269d80;
+$gray : #eaeaea;
+$midgray:#c8c8c8;
+$darkgray : #353535;
+$lightgray : #f6f6f6;
+$lightpurple : #f5edff;
+
+/*Radius*/
+$radius : 20px 20px 0px 0px;
+$radius-bottom : 0 0 20px 20px;
+
+
+//Style//
+
+* {
+    margin:0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+//Header Style//
+
+header{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:$margin-m;
+
+
+.logo_container {
+    display: flex;
+    justify-content: center;
+    margin: $margin-l;
+
+
+    .logo_container__logo {
+        width: 80%;
+    }
+}
+}
+
+//Banner Style//
+
+.banner {
+    width:90%;
+    margin:auto;
+    justify-content: center;
+    position:relative;
+
+    .banner_img{
+        width:100%;
+        height:500px;
+        object-fit: cover;
+        object-position: 0 -460px;
+        border-radius: 30px;;
+        
+    }
+}
