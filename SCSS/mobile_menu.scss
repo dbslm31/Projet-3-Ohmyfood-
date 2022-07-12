@@ -40,14 +40,13 @@ body {
     font-family: 'Roboto', sans-serif;
    
 }
-
 //Header Style//
 
 header{
     display:flex;
     justify-content: center;
     align-items:center;
-    margin:$margin-m;
+    margin:$margin-s;
 
 
 .logo_container {
@@ -65,7 +64,7 @@ header{
 //Banner Style//
 
 .banner {
-    width:90%;
+    width:100%;
     margin:auto;
     margin-bottom:50px;
     justify-content: center;
@@ -73,11 +72,9 @@ header{
 
     .banner_img{
         width:100%;
-        height:500px;
+        height:300px;
         object-fit: cover;
-        object-position: 0 -320px;
-        border-radius: 30px;
-        box-shadow: 5px 5px 7px $midgray;
+
         
     }
 }
@@ -86,15 +83,17 @@ header{
 
 .menu {
 
-    width:90%;
+    width:100%;
+    position:absolute;
     margin:auto;
     background-color: $lightgray;
-    left:10%;
-    top:70%;
-    border-radius: 30px;
+    left:0%;
+    top:50%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     box-shadow: 5px 5px 10px $gray;
     padding-top:20px;
-    padding-bottom:30px;
+    padding-bottom:50px;
 
     .menu_title {
         display:flex;
@@ -102,7 +101,7 @@ header{
 
         h1 {
             font-family: 'Shrikhand';
-            font-size: 40px;
+            font-size: 30px;
             margin-right:30px;
         }
 
@@ -122,22 +121,20 @@ header{
         }
     }
 
-
-
 }
 
 //Menu Cards style//
 
 .menu_category{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    width:95%;
+    width:100%;
     margin:auto;
 
 
     .menu_subtitle {
-        padding:$padding-m;
+        padding:$padding-s;
         border-bottom:3px solid $green;
         width:30%;
         margin-left:30px;
@@ -154,7 +151,7 @@ header{
         background-color: #fff;
         margin:$margin-s;
         padding:$padding-m;
-        width:75%;
+        width:90%;
         border-radius: 20px;
         box-shadow: 5px 5px 7px $midgray;
         display: flex;
@@ -197,7 +194,7 @@ header{
     margin:$margin-s;
     
     button {
-    width: 13%;
+    width: 50%;
     padding: 17px 15px;
     align-items: center;
     border: none;
@@ -226,22 +223,18 @@ header{
 
 .footer {
     background-color: $darkgray;
-    margin:auto;
-    margin-top:50px;
-    width:100%;
+    margin:0;
     padding-bottom:10px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+    width:100%;
+    position:absolute;
+    top:220%;
 
     .footer__logo_container {
-        margin-right:130px;
         
 
         .footer__logo {
             margin:$margin-s;
-            width:120px;
+            width:130px;
             fill:white;
     
         }
@@ -250,17 +243,13 @@ header{
 
     .footer__nav {
 
-        margin-left:120px;
-        margin-top:30px;
-        margin-bottom: 20px;
-        
-
+        margin-left:25px;
         
         
 
         .footer__nav--list a {
+
             text-decoration: none;
-            
 
             .footer__nav--list-item-icon{
                 color:white;
@@ -295,6 +284,5 @@ header{
     }
 
 }
-
 
 
