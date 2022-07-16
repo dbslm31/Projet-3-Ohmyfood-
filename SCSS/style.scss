@@ -217,6 +217,10 @@ body {
             &:hover {
                 cursor: pointer;
                 background-color: $lightpurple;
+
+                .card__body--icon i {
+                    color:$purple;
+                }
             }
 
 

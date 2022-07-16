@@ -166,6 +166,21 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        animation: appear 1s ease-in;
+
+        @keyframes appear {
+
+            0%{
+                transform:translateY(-50%); 
+                opacity:(0);
+            }
+
+            100%{
+                transform:translateY(0%); 
+                opacity:(1);
+            }
+            
+        }
 
 
         .menu_all--cards-body {
@@ -213,6 +228,8 @@ header{
                 color:#fff;
                 padding:10px;
                 margin:10px;
+                margin-left:50px;
+                transition: all 0.6s ease-in;
                 
             }
         }
@@ -233,6 +250,23 @@ header{
         align-items:center;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
+
+        .check_icon {
+            animation: rotation .6s ease-out;
+            margin-left:10px;
+
+
+
+            @keyframes rotation {
+
+                1% {transform: rotate(0deg);}
+
+                50% {transform: rotate(-180deg);}
+
+                100%{transform: rotate(-360deg);}
+                
+            }
+        }
 
 
     }
