@@ -48,6 +48,11 @@ header{
     align-items:center;
     margin:10px;
 
+    .home_page i{
+        color:#000;
+        margin-left:10px;
+   }
+
 
 .logo_container {
     display: flex;
@@ -197,12 +202,12 @@ header{
 
             h3 {
                 width:100%;
-                font-size: 17px;
+                font-size: 18px;
                 margin-bottom:7px;
             }
 
             p {
-                font-size: 13px;
+                font-size: 15px;
         
             }
             

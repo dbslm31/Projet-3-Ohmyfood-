@@ -211,6 +211,10 @@ body {
 
             &:hover {
                 background-color: $lightpurple;
+                
+                .card__body--icon i {
+                    color:$purple;
+                }
             }
 
             .card__number_icon {
