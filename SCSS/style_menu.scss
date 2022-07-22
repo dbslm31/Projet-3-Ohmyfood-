@@ -128,7 +128,7 @@ header {
 
 .menu_category {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 95%;
     margin: auto;
 
@@ -150,6 +150,8 @@ header {
     .menu_main-course,
     .menu_desserts {
         width: 100%;
+        display:flex;
+        flex-direction: column;
         animation: appear2 2s;
 
         @keyframes appear2 {
