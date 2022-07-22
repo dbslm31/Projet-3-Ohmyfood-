@@ -155,12 +155,45 @@ header{
         margin-bottom:30px;
         align-items: center;
         width:100%;
+        
     }
 
     .menu_desserts {
 
         align-items: center;
         width:100%;
+    }
+
+    .menu_apetizer, .menu_main-course, .menu_desserts {
+        animation : appear2 2s ease-in-out;
+
+        @keyframes appear2 {
+
+            0% {
+                transform: translateY(-50%);
+                opacity:(0);
+            }
+
+            100% {
+                transform: translateY(0%);
+                opacity:(1);
+            }
+            
+        }
+
+        
+    }
+
+    .menu_apetizer {
+        animation-delay:0s;
+    }
+
+    .menu_main-course {
+        animation-delay: .5s;
+    }
+
+    .menu_desserts {
+        animation-delay: 1s;
     }
 
     .menu_all--cards{
