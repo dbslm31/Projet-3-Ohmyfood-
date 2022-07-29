@@ -164,42 +164,41 @@ header{
     }
 
     .menu_apetizer {
-        animation-delay:1s;
-        animation: appear2 3s ease-in-out;
-
+        transition-delay: 1s;
+        animation: appear2 1.5s ease-in-out;
+        
 
         @keyframes appear2 {
+
             0% {
                 visibility: hidden;
                 opacity: (0);
-                transform: translateY(-100%);
-
+                transform: translateY(-50%);
+                
             }
 
 
             100% {
                 visibility: visible;
-                opacity:(1);
+                display:flex;
                 transform: translateY(0%);
-
+                
             }
 
         }
     }
 
     .menu_main-course {
-        animation-delay: 2s;
-        animation: appear2 3s ease-in-out;
-
+        transition-delay: 2s;
+        animation: appear2 2.5s ease-in-out;
+        
     }
 
     .menu_desserts {
-        animation-delay: 3s;
-        animation: appear2 3s ease-in-out;
-
-
+        transition-delay: 3s;
+        animation: appear2 3.5s ease-in-out;
+    
     }
-
     .menu_all--cards{
         background-color: #fff;
         margin:$margin-s;

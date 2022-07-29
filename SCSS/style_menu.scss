@@ -158,8 +158,8 @@ header {
     }
 
     .menu_apetizer {
-        animation-delay: 0s;
-        animation: appear2 2s ease-in-out;
+        transition-delay: 0s;
+        animation: appear2 1s ease-in-out;
         
 
         @keyframes appear2 {
@@ -167,7 +167,7 @@ header {
             0% {
                 visibility: hidden;
                 opacity: (0);
-                transform: translateY(-90%);
+                transform: translateY(-50%);
                 
             }
 
@@ -183,13 +183,13 @@ header {
     }
 
     .menu_main-course {
-        animation-delay: 1s;
-        animation: appear2 3s ease-in-out;
+        transition-delay: 1s;
+        animation: appear2 2s ease-in-out;
         
     }
 
     .menu_desserts {
-        animation-delay: 2s;
+        transition-delay: 2s;
         animation: appear2 3s ease-in-out;
         
 
