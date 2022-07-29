@@ -149,10 +149,10 @@ header {
     .menu_main-course,
     .menu_desserts {
         width: 100%;
-        display:flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
-        
+
 
 
     }
@@ -160,7 +160,7 @@ header {
     .menu_apetizer {
         transition-delay: 0s;
         animation: appear2 1s ease-in-out;
-        
+
 
         @keyframes appear2 {
 
@@ -168,15 +168,15 @@ header {
                 visibility: hidden;
                 opacity: (0);
                 transform: translateY(-50%);
-                
+
             }
 
 
             100% {
                 visibility: visible;
-                display:flex;
+                display: flex;
                 transform: translateY(0%);
-                
+
             }
 
         }
@@ -185,13 +185,13 @@ header {
     .menu_main-course {
         transition-delay: 1s;
         animation: appear2 2s ease-in-out;
-        
+
     }
 
     .menu_desserts {
         transition-delay: 2s;
         animation: appear2 3s ease-in-out;
-        
+
 
     }
 
@@ -208,7 +208,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-     
+
 
 
 
@@ -424,51 +424,52 @@ header {
 
     .footer__nav {
 
-        margin-left:120px;
-        margin-top:30px;
+        margin-left: 120px;
+        margin-top: 30px;
         margin-bottom: 20px;
-        
+
 
         li {
             list-style: none;
-            margin-bottom:10px;
-            
+            margin-bottom: 10px;
+
         }
 
         .footer__nav--list a {
             text-decoration: none;
-            display:flex;
+            display: flex;
             align-items: center;
-            color:#fff;
-            
+            color: #fff;
 
-            .footer__nav--list-item-icon{
-                color:white;
-                display : flex;
+
+            .footer__nav--list-item-icon {
+                color: white;
+                display: flex;
                 align-items: center;
-                justify-content:space-around;
-                margin-bottom:10px;
+                justify-content: space-around;
+                margin-bottom: 10px;
 
 
             }
 
-            .footer__nav--list-item-icon_hand{
-                color:white;
-                display : flex;
+            .footer__nav--list-item-icon_hand {
+                color: white;
+                display: flex;
                 align-items: center;
-                margin-bottom:10px;
+                margin-bottom: 10px;
 
 
             }
 
-            .fa-solid, .fas {
-                margin-right:10px;
+            .fa-solid,
+            .fas {
+                margin-right: 10px;
             }
 
             .footer__nav--list-item {
                 list-style: none;
-                color:white;
-                margin-bottom:10px;
+                color: white;
+                margin-bottom: 10px;
             }
 
         }
