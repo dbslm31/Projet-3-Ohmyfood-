@@ -358,21 +358,28 @@ body {
 
         margin-left:25px;
         
-        
+
+        li {
+            list-style: none;
+            margin-bottom:10px;
+            
+        }
 
         .footer__nav--list a {
-
             text-decoration: none;
+            display:flex;
+            align-items: center;
+            color:#fff;
+            
 
             .footer__nav--list-item-icon{
                 color:white;
                 display : flex;
                 align-items: center;
+                justify-content:space-around;
                 margin-bottom:10px;
 
-                i{
-                    margin-right:10px;
-                }
+
             }
 
             .footer__nav--list-item-icon_hand{
@@ -381,10 +388,11 @@ body {
                 align-items: center;
                 margin-bottom:10px;
 
-                i{
-                    margin-right:5px;
-                }
 
+            }
+
+            .fa-solid, .fas {
+                margin-right:10px;
             }
 
             .footer__nav--list-item {
