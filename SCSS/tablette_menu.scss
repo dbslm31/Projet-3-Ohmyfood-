@@ -139,6 +139,7 @@ header{
     margin-top:30px;
 
 
+
     .menu_subtitle {
         padding-bottom:8px;
         border-bottom:4px solid $green;
@@ -152,55 +153,51 @@ header{
         }
     }
 
-    .menu_apetizer, .menu_main-course {
-
-        margin-bottom:30px;
-        align-items: center;
-        width:100%;
-    }
-
+    .menu_apetizer,
+    .menu_main-course,
     .menu_desserts {
-
+        margin-bottom: 30px;
         align-items: center;
-        width:100%;
-    }
+        width: 100%;
 
-    .menu_apetizer, .menu_main-course, .menu_desserts {
-        animation : appear2 2s ease-out;
 
-        @keyframes appear2 {
-
-            0% {
-                transform: translateY(-50%);
-                opacity:(0);
-                
-            }
-
-            10% {
-                opacity:(.2)
-            }
-
-            100% {
-                transform: translateY(0%);
-                opacity:(1);
-            
-            }
-            
-        }
-
-        
     }
 
     .menu_apetizer {
-        animation-delay:0s;
+        animation-delay:1s;
+        animation: appear2 3s ease-in-out;
+
+
+        @keyframes appear2 {
+            0% {
+                visibility: hidden;
+                opacity: (0);
+                transform: translateY(-100%);
+
+            }
+
+
+            100% {
+                visibility: visible;
+                opacity:(1);
+                transform: translateY(0%);
+
+            }
+
+        }
     }
 
     .menu_main-course {
-        animation-delay: .5s;
+        animation-delay: 2s;
+        animation: appear2 3s ease-in-out;
+
     }
 
     .menu_desserts {
-        animation-delay: 1s;
+        animation-delay: 3s;
+        animation: appear2 3s ease-in-out;
+
+
     }
 
     .menu_all--cards{
@@ -212,21 +209,6 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        animation: appear 1s ease-in;
-
-        @keyframes appear {
-
-            0%{
-                transform:translateY(-50%); 
-                opacity:(0);
-            }
-
-            100%{
-                transform:translateY(0%); 
-                opacity:(1);
-            }
-            
-        }
 
 
         .menu_all--cards-body {

@@ -150,50 +150,54 @@ header{
         }
     }
 
-    .menu_apetizer, .menu_main-course {
 
+
+    .menu_apetizer,
+    .menu_main-course,
+    .menu_desserts {    
         margin-bottom:30px;
-        align-items: center;
-        width:100%;
+    align-items: center;
+    width:100%;
+
+
+    }
+
+    .menu_apetizer {
+        animation-delay: 1s;
+        animation: appear2 3s ease-in-out;
         
-    }
-
-    .menu_desserts {
-
-        align-items: center;
-        width:100%;
-    }
-
-    .menu_apetizer, .menu_main-course, .menu_desserts {
-        animation : appear2 2s ease-in-out;
 
         @keyframes appear2 {
 
             0% {
-                transform: translateY(-50%);
-                opacity:(0);
+                visibility: hidden;
+                opacity: (0);
+                transform: translateY(-90%);
+                
             }
+
 
             100% {
+                visibility: visible;
+                display:flex;
                 transform: translateY(0%);
-                opacity:(1);
+                
             }
-            
+
         }
-
-        
-    }
-
-    .menu_apetizer {
-        animation-delay:0s;
     }
 
     .menu_main-course {
-        animation-delay: .5s;
+        animation-delay: 2s;
+        animation: appear2 3s ease-in-out;
+        
     }
 
     .menu_desserts {
-        animation-delay: 1s;
+        animation-delay: 3s;
+        animation: appear2 3s ease-in-out;
+        
+
     }
 
     .menu_all--cards{
@@ -205,21 +209,7 @@ header{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        animation: appear 1s ease-in;
-
-        @keyframes appear {
-
-            0%{
-                transform:translateY(-50%); 
-                opacity:(0);
-            }
-
-            100%{
-                transform:translateY(0%); 
-                opacity:(1);
-            }
-            
-        }
+        
 
 
         .menu_all--cards-body {
