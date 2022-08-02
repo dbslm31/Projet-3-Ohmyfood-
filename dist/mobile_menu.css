@@ -180,13 +180,20 @@ header .logo_container .logo_container__logo {
 }
 
 .menu_category .menu_all--cards .menu_all--cards-body h3 {
-    width: 100%;
-    font-size: 18px;
-    margin-bottom: 7px
+    max-width: 250px;
+    font-size: 17px;
+    margin-bottom: 7px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .menu_category .menu_all--cards .menu_all--cards-body p {
-    font-size: 15px
+    max-width: 230px;
+    font-size: 13.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
 }
 
 .menu_category .menu_all--cards .menu_all--cards-price {
@@ -214,29 +221,31 @@ header .logo_container .logo_container__logo {
     transition: all .6s ease-in
 }
 
-.menu_all--cards:hover .menu_all--cards-text,
-.menu_all--cards:active .menu_all--cards-text {
+.menu_all--cards:hover .menu_all--cards-body,
+.menu_all--cards:active .menu_all--cards-body {
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical
+    white-space: nowrap
 }
 
-.menu_category .menu_all--cards:hover .menu_all--cards-body h3 {
- max-width:150px;
- overflow:hidden;
- text-overflow: ellipsis;
- white-space: nowrap;
-}
-
-.menu_category .menu_all--cards:hover .menu_all--cards-body p {
-    max-width:150px;
-    overflow:hidden;
+.menu_all--cards:hover .menu_all--cards-body h3,
+.menu_all--cards:active .menu_all--cards-body h3 {
+    max-width: 150px;
+    font-size: 17px;
+    margin-bottom: 7px;
+    overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
-   }
-   
+    white-space: nowrap
+}
+
+.menu_all--cards:hover .menu_all--cards-body p,
+.menu_all--cards:active .menu_all--cards-body p {
+    max-width: 150px;
+    font-size: 13.5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
 
 .menu_all--cards:hover .menu_all--check,
 .menu_all--cards:active .menu_all--check {
@@ -347,7 +356,8 @@ header .logo_container .logo_container__logo {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    margin-right:9px;
 }
 
 .footer .footer__nav .footer__nav--list a .footer__nav--list-item-icon_hand {
@@ -355,11 +365,17 @@ header .logo_container .logo_container__logo {
     display: flex;
     align-items: center;
     margin-bottom: 10px
+    
 }
 
 .footer .footer__nav .footer__nav--list a .fa-solid,
-.footer .footer__nav .footer__nav--list a .fas {
-    margin-right: 10px
+.footer .footer__nav .footer__nav--list a .fas .fa-utensils {
+    margin-right:10px;
+}
+
+.footer .footer__nav .footer__nav--list a .fa-solid,
+.footer .footer__nav .footer__nav--list a .fas .fa-handshake-angle {
+    width:10px;
 }
 
 .footer .footer__nav .footer__nav--list a .footer__nav--list-item {
