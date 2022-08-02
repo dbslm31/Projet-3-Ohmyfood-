@@ -339,7 +339,7 @@ header .logo_container .logo_container__logo {
 }
 
 .footer .footer__logo_container {
-    margin-right: 130px
+    margin-right: 80px
 }
 
 .footer .footer__logo_container .footer__logo {
@@ -349,7 +349,7 @@ header .logo_container .logo_container__logo {
 }
 
 .footer .footer__nav {
-    margin-left: 120px;
+    margin-left: 80px;
     margin-top: 30px;
     margin-bottom: 20px
 }
@@ -379,6 +379,16 @@ header .logo_container .logo_container__logo {
     display: flex;
     align-items: center;
     margin-bottom: 10px
+}
+
+.footer .footer__nav .footer__nav--list a .fa-solid,
+.footer .footer__nav .footer__nav--list a .fas .fa-utensils {
+    margin-right:10px;
+}
+
+.footer .footer__nav .footer__nav--list a .fa-solid,
+.footer .footer__nav .footer__nav--list a .fas .fa-handshake-angle {
+    width:10px;
 }
 
 .footer .footer__nav .footer__nav--list a .fa-solid,

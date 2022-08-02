@@ -1,1 +1,368 @@
-*{margin:0;padding:0;box-sizing:border-box}body{font-family:"Roboto",sans-serif}header{display:flex;justify-content:center;align-items:center;margin:10px}header .home_page i{color:#000;margin-left:10px}header .logo_container{display:flex;justify-content:center;margin:40px 20px}header .logo_container .logo_container__logo{width:80%}.banner{width:100%;margin:auto;justify-content:center;position:relative}.banner .banner_img{width:100%;height:400px;-o-object-fit:cover;object-fit:cover}.menu{width:100%;position:relative;margin-top:-2rem;background-color:#f6f6f6;left:0%;top:45%;border-top-left-radius:30px;border-top-right-radius:30px;padding-top:20px;padding-bottom:50px}.menu .menu_title{display:flex;justify-content:space-between;margin:0 2rem}.menu .menu_title h1{font-family:"Shrikhand";font-size:32px;margin-right:30px}.menu .menu_title svg{width:30px;fill:rgba(0,0,0,0);stroke-width:35;stroke:#000;transition:fill 1s}.menu .menu_title svg:hover{cursor:pointer;fill:#9356dc;stroke:#9356dc;transform:scale(1)}.menu_category{display:flex;flex-direction:column;justify-content:space-around;width:100%;margin:auto;margin-top:30px}.menu_category .menu_subtitle{padding-bottom:8px;border-bottom:4px solid #99e2d0;width:10%;margin-left:30px;margin-bottom:10px}.menu_category .menu_subtitle h2{font-weight:100;font-size:18px}.menu_category .menu_apetizer,.menu_category .menu_main-course,.menu_category .menu_desserts{margin-bottom:30px;align-items:center;width:100%}.menu_category .menu_apetizer{transition-delay:1s;-webkit-animation:appear2 1.5s ease-in-out;animation:appear2 1.5s ease-in-out}@-webkit-keyframes appear2{0%{visibility:hidden;opacity:0;transform:translateY(-50%)}100%{visibility:visible;display:flex;transform:translateY(0%)}}@keyframes appear2{0%{visibility:hidden;opacity:0;transform:translateY(-50%)}100%{visibility:visible;display:flex;transform:translateY(0%)}}.menu_category .menu_main-course{transition-delay:2s;-webkit-animation:appear2 2.5s ease-in-out;animation:appear2 2.5s ease-in-out}.menu_category .menu_desserts{transition-delay:3s;-webkit-animation:appear2 3.5s ease-in-out;animation:appear2 3.5s ease-in-out}.menu_category .menu_all--cards{background-color:#fff;margin:20px;width:95%;border-radius:20px;box-shadow:5px 5px 7px #c8c8c8;display:flex;justify-content:space-between;align-items:center}.menu_category .menu_all--cards .menu_all--cards-body{width:100%;margin:0;padding:0 15px;display:flex;flex-direction:row;justify-content:space-between;align-items:center}.menu_category .menu_all--cards .menu_all--cards-body h3{width:100%;font-size:18px;margin-bottom:7px}.menu_category .menu_all--cards .menu_all--cards-body p{font-size:15px}.menu_category .menu_all--cards .menu_all--cards-price{margin-top:30px;padding-left:0px;font-weight:700}.menu_category .menu_all--cards .menu_all--check{overflow:hidden;padding:5px;width:0;display:flex;align-items:center;border-top-right-radius:20px;border-bottom-right-radius:20px;transition:all .4s ease-in}.menu_category .menu_all--cards .check_icon{color:#fff;padding:10px;margin:10px;margin-left:50px;transition:all .6s ease-in}.menu_all--cards:hover .menu_all--check,.menu_all--cards:active .menu_all--check{background-color:#99e2d0;width:10%;padding:5px;display:flex;align-items:center;border-top-right-radius:20px;border-bottom-right-radius:20px}.menu_all--cards:hover .menu_all--check .check_icon,.menu_all--cards:active .menu_all--check .check_icon{-webkit-animation:rotation .6s ease-out;animation:rotation .6s ease-out;margin-left:10px}@-webkit-keyframes rotation{1%{transform:rotate(0deg)}50%{transform:rotate(-180deg)}100%{transform:rotate(-360deg)}}@keyframes rotation{1%{transform:rotate(0deg)}50%{transform:rotate(-180deg)}100%{transform:rotate(-360deg)}}.menu_button{display:flex;justify-content:center;margin:20px}.menu_button button{width:50%;padding:17px 15px;align-items:center;border:none;border-radius:45px;color:#fff;font-size:15px;font-weight:700;box-shadow:5px 5px 7px #c8c8c8;background-image:linear-gradient(175deg, #FF79DA, 70%, #9356DC);background-size:100%;transition:background-size 1s,filter 1s,box-shadow 1s}.menu_button button:hover{cursor:pointer;background-size:120%;filter:brightness(105%);box-shadow:5px 5px 7px #959595}.footer{background-color:#353535;margin:auto;width:100%;padding-bottom:10px;display:flex;flex-direction:row-reverse;justify-content:space-between;align-items:center}.footer .footer__logo_container{margin-right:50px}.footer .footer__logo_container .footer__logo{margin:20px;width:120px;fill:#fff}.footer .footer__nav{margin-left:50px;margin-top:30px;margin-bottom:20px}.footer .footer__nav li{list-style:none;margin-bottom:10px}.footer .footer__nav .footer__nav--list a{text-decoration:none;display:flex;align-items:center;color:#fff}.footer .footer__nav .footer__nav--list a .footer__nav--list-item-icon{color:#fff;display:flex;align-items:center;justify-content:space-around;margin-bottom:10px}.footer .footer__nav .footer__nav--list a .footer__nav--list-item-icon_hand{color:#fff;display:flex;align-items:center;margin-bottom:10px}.footer .footer__nav .footer__nav--list a .fa-solid,.footer .footer__nav .footer__nav--list a .fas{margin-right:10px}.footer .footer__nav .footer__nav--list a .footer__nav--list-item{list-style:none;color:#fff;margin-bottom:10px}/*# sourceMappingURL=tablette_menu.css.map */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    font-family: "Roboto", sans-serif
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px
+}
+
+header .home_page i {
+    color: #000;
+    margin-left: 10px
+}
+
+header .logo_container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px
+}
+
+header .logo_container .logo_container__logo {
+    width: 80%
+}
+
+.banner {
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    position: relative
+}
+
+.banner .banner_img {
+    width: 100%;
+    height: 400px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.menu {
+    width: 100%;
+    position: relative;
+    margin-top: -2rem;
+    background-color: #f6f6f6;
+    left: 0%;
+    top: 45%;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px
+}
+
+.menu .menu_title {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem
+}
+
+.menu .menu_title h1 {
+    font-family: "Shrikhand";
+    font-size: 32px;
+    margin-right: 30px
+}
+
+.menu .menu_title svg {
+    width: 30px;
+    fill: rgba(0, 0, 0, 0);
+    stroke-width: 35;
+    stroke: #000;
+    transition: fill 1s
+}
+
+.menu .menu_title svg:hover {
+    cursor: pointer;
+    fill: #9356dc;
+    stroke: #9356dc;
+    transform: scale(1)
+}
+
+.menu_category {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    margin-top: 30px
+}
+
+.menu_category .menu_subtitle {
+    padding-bottom: 8px;
+    border-bottom: 4px solid #99e2d0;
+    width: 10%;
+    margin-left: 30px;
+    margin-bottom: 10px
+}
+
+.menu_category .menu_subtitle h2 {
+    font-weight: 100;
+    font-size: 18px
+}
+
+.menu_category .menu_apetizer,
+.menu_category .menu_main-course,
+.menu_category .menu_desserts {
+    margin-bottom: 30px;
+    align-items: center;
+    width: 100%
+}
+
+.menu_category .menu_apetizer {
+    transition-delay: 1s;
+    -webkit-animation: appear2 1.5s ease-in-out;
+    animation: appear2 1.5s ease-in-out
+}
+
+@-webkit-keyframes appear2 {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-50%)
+    }
+
+    100% {
+        visibility: visible;
+        display: flex;
+        transform: translateY(0%)
+    }
+}
+
+@keyframes appear2 {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-50%)
+    }
+
+    100% {
+        visibility: visible;
+        display: flex;
+        transform: translateY(0%)
+    }
+}
+
+.menu_category .menu_main-course {
+    transition-delay: 2s;
+    -webkit-animation: appear2 2.5s ease-in-out;
+    animation: appear2 2.5s ease-in-out
+}
+
+.menu_category .menu_desserts {
+    transition-delay: 3s;
+    -webkit-animation: appear2 3.5s ease-in-out;
+    animation: appear2 3.5s ease-in-out
+}
+
+.menu_category .menu_all--cards {
+    background-color: #fff;
+    margin: 20px;
+    width: 95%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 7px #c8c8c8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.menu_category .menu_all--cards .menu_all--cards-body {
+    width: 100%;
+    margin: 0;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center
+}
+
+.menu_category .menu_all--cards .menu_all--cards-body h3 {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 7px
+}
+
+.menu_category .menu_all--cards .menu_all--cards-body p {
+    font-size: 15px
+}
+
+.menu_category .menu_all--cards .menu_all--cards-price {
+    margin-top: 30px;
+    padding-left: 0px;
+    font-weight: 700
+}
+
+.menu_category .menu_all--cards .menu_all--check {
+    overflow: hidden;
+    padding: 5px;
+    width: 0;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: all .4s ease-in
+}
+
+.menu_category .menu_all--cards .check_icon {
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 50px;
+    transition: all .6s ease-in
+}
+
+.menu_all--cards:hover .menu_all--check,
+.menu_all--cards:active .menu_all--check {
+    background-color: #99e2d0;
+    width: 10%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px
+}
+
+.menu_all--cards:hover .menu_all--check .check_icon,
+.menu_all--cards:active .menu_all--check .check_icon {
+    -webkit-animation: rotation .6s ease-out;
+    animation: rotation .6s ease-out;
+    margin-left: 10px
+}
+
+@-webkit-keyframes rotation {
+    1% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(-180deg)
+    }
+
+    100% {
+        transform: rotate(-360deg)
+    }
+}
+
+@keyframes rotation {
+    1% {
+        transform: rotate(0deg)
+    }
+
+    50% {
+        transform: rotate(-180deg)
+    }
+
+    100% {
+        transform: rotate(-360deg)
+    }
+}
+
+.menu_button {
+    display: flex;
+    justify-content: center;
+    margin: 20px
+}
+
+.menu_button button {
+    width: 50%;
+    padding: 17px 15px;
+    align-items: center;
+    border: none;
+    border-radius: 45px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    box-shadow: 5px 5px 7px #c8c8c8;
+    background-image: linear-gradient(175deg, #FF79DA, 70%, #9356DC);
+    background-size: 100%;
+    transition: background-size 1s, filter 1s, box-shadow 1s
+}
+
+.menu_button button:hover {
+    cursor: pointer;
+    background-size: 120%;
+    filter: brightness(105%);
+    box-shadow: 5px 5px 7px #959595
+}
+
+.footer {
+    background-color: #353535;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center
+}
+
+.footer .footer__logo_container {
+    margin-right: 50px
+}
+
+.footer .footer__logo_container .footer__logo {
+    margin: 20px;
+    width: 120px;
+    fill: #fff
+}
+
+.footer .footer__nav {
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px
+}
+
+.footer .footer__nav li {
+    list-style: none;
+    margin-bottom: 10px
+}
+
+.footer .footer__nav .footer__nav--list a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff
+}
+
+.footer .footer__nav .footer__nav--list a .footer__nav--list-item-icon {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px
+}
+
+.footer .footer__nav .footer__nav--list a .footer__nav--list-item-icon_hand {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px
+}
+
+.footer .footer__nav .footer__nav--list a .fa-solid,
+.footer .footer__nav .footer__nav--list a .fas .fa-utensils {
+    margin-right:10px;
+}
+
+.footer .footer__nav .footer__nav--list a .fa-solid,
+.footer .footer__nav .footer__nav--list a .fas .fa-handshake-angle {
+    width:10px;
+}
+
+.footer .footer__nav .footer__nav--list a .fa-solid,
+.footer .footer__nav .footer__nav--list a .fas {
+    margin-right: 10px
+}
+
+.footer .footer__nav .footer__nav--list a .footer__nav--list-item {
+    list-style: none;
+    color: #fff;
+    margin-bottom: 10px
+}
+
+/*# sourceMappingURL=tablette_menu.css.map */

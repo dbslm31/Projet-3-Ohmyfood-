@@ -1,1 +1,356 @@
-*{margin:0;padding:0}body{font-family:"Roboto",sans-serif;position:relative}.loader{position:fixed;top:50%;left:47%;transform:translate(-50%, -50%);width:100%;height:100vh;background-image:linear-gradient(to bottom, #fff, 85%, #f5edff);opacity:99%;-webkit-animation:fade-out 5s;animation:fade-out 5s;-webkit-animation-fill-mode:forwards;animation-fill-mode:forwards;z-index:1}@-webkit-keyframes fade-out{0%{opacity:100%}50%{opacity:100%}100%{opacity:0%;visibility:hidden}}@keyframes fade-out{0%{opacity:100%}50%{opacity:100%}100%{opacity:0%;visibility:hidden}}.loader .loader_icon{position:absolute;top:50%;left:50%;color:#9356dc;width:300px;height:300px;opacity:100%}.logo_container{display:flex;justify-content:center;margin:40px 20px}.logo_container .logo_container__logo{width:20%}.main_content{margin:auto;width:100%;display:flex;flex-direction:column;flex:1}.logo_container{display:flex;justify-content:center;margin:30px 20px}.logo_container .logo_container__logo{width:50%}.reservation{margin:0}.reservation .reservation__location{background-color:#eaeaea;padding:10px;display:flex;flex-direction:row;justify-content:center;align-items:center}.reservation .reservation__location p{padding:0 0 0 20px}.reservation .reservation__explore{margin:30px 20px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}.reservation .reservation__explore h1{padding:0 30px 20px 30px;font-size:25px}.reservation .reservation__explore p{padding:0 0 20px 0;font-weight:lighter;font-size:18px}.reservation .reservation__explore button{width:65%;padding:17px 15px;align-items:center;border:none;border-radius:45px;color:#fff;font-size:15px;font-weight:700;box-shadow:5px 5px 7px #c8c8c8;background-image:linear-gradient(175deg, #FF79DA, 70%, #9356DC);background-size:100%;transition:background-size 1s,filter 1s,box-shadow 1s}.reservation .reservation__explore button:hover{cursor:pointer;background-size:120%;filter:brightness(105%);box-shadow:5px 5px 7px #959595}.function{margin-bottom:20px}.function .function__title{margin:30px 20px}.function .function__list{display:flex;flex-direction:column;align-items:center}.function .function__list .function__list--card{width:75%;margin:0 10px 20px 10px;padding:20px;position:relative;display:flex;align-items:center;background-color:#f6f6f6;border-radius:20px;box-shadow:5px 7px 5px #eaeaea}.function .function__list .function__list--card:hover{background-color:#f5edff}.function .function__list .function__list--card:hover .card__body--icon i{color:#9356dc}.function .function__list .function__list--card .card__number_icon{background-color:#9356dc;color:#fff;font-weight:700;display:flex;justify-content:center;align-items:center;width:25px;height:25px;border-radius:50%;position:absolute;left:-3%}.function .function__list .function__list--card .card__body{display:flex;flex-direction:row;justify-content:center;align-items:center;margin-left:30px}.function .function__list .function__list--card .card__body p{font-weight:500}.function .function__list .function__list--card .card__body .card__body--icon{color:#a9a9a9;padding-right:20px}.restaurants__title{margin-left:20px;margin-top:20px}.restaurants__allcards{display:flex;flex-direction:column;justify-content:center;margin-bottom:20px}.restaurants__allcards .restaurants__allcards--card{flex:1;margin:20px;border-radius:0 0 20px 20px;box-shadow:5px 7px 5px #eaeaea;position:relative}.restaurants__allcards .restaurants__allcards--card a{text-decoration:none;color:#000}.restaurants__allcards .restaurants__allcards--card .button_new{background-color:#99e2d0;color:#269d80;font-weight:600;padding:8px 15px;border:none;position:absolute;left:70%;top:3%}.restaurants__allcards .restaurants__allcards--card .restaurants__cards--img{height:150px}.restaurants__allcards .restaurants__allcards--card .restaurants__cards--img .cards-img{width:100%;height:100%;border-radius:20px 20px 0px 0px;-o-object-fit:cover;object-fit:cover}.restaurants__allcards .restaurants__allcards--card .restaurants__cards--body{display:flex;justify-content:space-between;align-items:center;margin:20px}.restaurants__allcards .restaurants__allcards--card .restaurants__cards--body .restaurants__cards--body-text h3{padding-bottom:5px}.restaurants__allcards .restaurants__allcards--card .restaurants__cards--body .restaurants__cards--body-heart{width:30px;fill:rgba(0,0,0,0);stroke-width:25;stroke:#000;transition:fill 1.5s}.restaurants__allcards .restaurants__allcards--card .restaurants__cards--body .restaurants__cards--body-heart:hover{cursor:pointer;fill:#9356dc;stroke:#9356dc;transform:scale(1)}.footer{background-color:#353535;margin:0;padding-bottom:10px;width:100%}.footer .footer__logo_container .footer__logo{margin:20px;width:130px;fill:#fff}.footer .footer__nav{margin-left:25px}.footer .footer__nav li{list-style:none;margin-bottom:10px}.footer .footer__nav .footer__nav--list a{text-decoration:none;display:flex;align-items:center;color:#fff}.footer .footer__nav .footer__nav--list a .footer__nav--list-item-icon{color:#fff;display:flex;align-items:center;justify-content:space-around;margin-bottom:10px}.footer .footer__nav .footer__nav--list a .footer__nav--list-item-icon_hand{color:#fff;display:flex;align-items:center;margin-bottom:10px}.footer .footer__nav .footer__nav--list a .fa-solid,.footer .footer__nav .footer__nav--list a .fas{margin-right:10px}.footer .footer__nav .footer__nav--list a .footer__nav--list-item{list-style:none;color:#fff;margin-bottom:10px}/*# sourceMappingURL=mobile.css.map */
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    position: relative
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #fff, 85%, #f5edff);
+    opacity: 99%;
+    -webkit-animation: fade-out 5s;
+    animation: fade-out 5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    z-index: 1
+}
+
+@-webkit-keyframes fade-out {
+    0% {
+        opacity: 100%
+    }
+
+    50% {
+        opacity: 100%
+    }
+
+    100% {
+        opacity: 0%;
+        visibility: hidden
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 100%
+    }
+
+    50% {
+        opacity: 100%
+    }
+
+    100% {
+        opacity: 0%;
+        visibility: hidden
+    }
+}
+
+.loader .loader_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #9356dc;
+    width: 300px;
+    height: 300px;
+    opacity: 100%
+}
+
+.logo_container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px
+}
+
+.logo_container .logo_container__logo {
+    width: 20%
+}
+
+.main_content {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
+.logo_container {
+    display: flex;
+    justify-content: center;
+    margin: 30px 20px
+}
+
+.logo_container .logo_container__logo {
+    width: 50%
+}
+
+.reservation {
+    margin: 0
+}
+
+.reservation .reservation__location {
+    background-color: #eaeaea;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+.reservation .reservation__location p {
+    padding: 0 0 0 20px
+}
+
+.reservation .reservation__explore {
+    margin: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center
+}
+
+.reservation .reservation__explore h1 {
+    padding: 0 30px 20px 30px;
+    font-size: 25px
+}
+
+.reservation .reservation__explore p {
+    padding: 0 0 20px 0;
+    font-weight: lighter;
+    font-size: 18px
+}
+
+.reservation .reservation__explore button {
+    width: 65%;
+    padding: 17px 15px;
+    align-items: center;
+    border: none;
+    border-radius: 45px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    box-shadow: 5px 5px 7px #c8c8c8;
+    background-image: linear-gradient(175deg, #FF79DA, 70%, #9356DC);
+    background-size: 100%;
+    transition: background-size 1s, filter 1s, box-shadow 1s
+}
+
+.reservation .reservation__explore button:hover {
+    cursor: pointer;
+    background-size: 120%;
+    filter: brightness(105%);
+    box-shadow: 5px 5px 7px #959595
+}
+
+.function {
+    margin-bottom: 20px
+}
+
+.function .function__title {
+    margin: 30px 20px
+}
+
+.function .function__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.function .function__list .function__list--card {
+    width: 75%;
+    margin: 0 10px 20px 10px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #f6f6f6;
+    border-radius: 20px;
+    box-shadow: 5px 7px 5px #eaeaea
+}
+
+.function .function__list .function__list--card:hover {
+    background-color: #f5edff
+}
+
+.function .function__list .function__list--card:hover .card__body--icon i {
+    color: #9356dc
+}
+
+.function .function__list .function__list--card .card__number_icon {
+    background-color: #9356dc;
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: absolute;
+    left: -3%
+}
+
+.function .function__list .function__list--card .card__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px
+}
+
+.function .function__list .function__list--card .card__body p {
+    font-weight: 500
+}
+
+.function .function__list .function__list--card .card__body .card__body--icon {
+    color: #a9a9a9;
+    padding-right: 20px
+}
+
+.restaurants__title {
+    margin-left: 20px;
+    margin-top: 20px
+}
+
+.restaurants__allcards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px
+}
+
+.restaurants__allcards .restaurants__allcards--card {
+    flex: 1;
+    margin: 20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 5px 7px 5px #eaeaea;
+    position: relative
+}
+
+.restaurants__allcards .restaurants__allcards--card a {
+    text-decoration: none;
+    color: #000
+}
+
+.restaurants__allcards .restaurants__allcards--card .button_new {
+    background-color: #99e2d0;
+    color: #269d80;
+    font-weight: 600;
+    padding: 8px 15px;
+    border: none;
+    position: absolute;
+    left: 70%;
+    top: 3%
+}
+
+.restaurants__allcards .restaurants__allcards--card .restaurants__cards--img {
+    height: 150px
+}
+
+.restaurants__allcards .restaurants__allcards--card .restaurants__cards--img .cards-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0px 0px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.restaurants__allcards .restaurants__allcards--card .restaurants__cards--body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px
+}
+
+.restaurants__allcards .restaurants__allcards--card .restaurants__cards--body .restaurants__cards--body-text h3 {
+    padding-bottom: 5px
+}
+
+.restaurants__allcards .restaurants__allcards--card .restaurants__cards--body .restaurants__cards--body-heart {
+    width: 30px;
+    fill: rgba(0, 0, 0, 0);
+    stroke-width: 25;
+    stroke: #000;
+    transition: fill 1.5s
+}
+
+.restaurants__allcards .restaurants__allcards--card .restaurants__cards--body .restaurants__cards--body-heart:hover {
+    cursor: pointer;
+    fill: #9356dc;
+    stroke: #9356dc;
+    transform: scale(1)
+}
+
+.footer {
+    background-color: #353535;
+    margin: 0;
+    padding-bottom: 10px;
+    width: 100%;
+    display: block
+}
+
+.footer .footer__logo_container .footer__logo {
+    margin: 20px;
+    width: 130px;
+    fill: #fff
+}
+
+.footer .footer__nav {
+    margin-left: 25px
+}
+
+.footer .footer__nav li {
+    list-style: none;
+    margin-bottom: 10px
+}
+
+.footer .footer__nav .footer__nav--list a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #fff
+}
+
+.footer .footer__nav .footer__nav--list a .footer__nav--list-item-icon {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-right:9px;
+}
+
+.footer .footer__nav .footer__nav--list a .footer__nav--list-item-icon_hand {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px
+    
+}
+
+.footer .footer__nav .footer__nav--list a .fa-solid,
+.footer .footer__nav .footer__nav--list a .fas .fa-utensils {
+    margin-right:10px;
+}
+
+.footer .footer__nav .footer__nav--list a .fa-solid,
+.footer .footer__nav .footer__nav--list a .fas .fa-handshake-angle {
+    width:10px;
+}
+
+.footer .footer__nav .footer__nav--list a .footer__nav--list-item {
+    list-style: none;
+    color: #fff;
+    margin-bottom: 10px
+}
+
+/*# sourceMappingURL=mobile.css.map */
