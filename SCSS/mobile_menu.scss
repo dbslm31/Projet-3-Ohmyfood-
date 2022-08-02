@@ -274,19 +274,14 @@ header {
 .menu_all--cards:active {
 
     .menu_all--cards-body {
-        width: 100%;
-        margin: 0;
-        padding-right: 10px;
-        padding-left: 20px;
-        display: flex;
-        justify-content: space-between;
 
-
-
+        overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
 
 
         h3 {
-            max-width: 200px;
+            max-width: 150px;
             font-size: 17px;
             margin-bottom: 7px;
             overflow: hidden;
@@ -297,7 +292,7 @@ header {
         }
 
         p {
-            max-width: 200px;
+            max-width: 150px;
             font-size: 13.5px;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -305,6 +300,10 @@ header {
 
 
         }
+
+
+        
+
 
     }
 
@@ -346,6 +345,8 @@ header {
     }
 
 }
+
+
 
 .menu_button {
     display: flex;

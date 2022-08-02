@@ -223,6 +223,21 @@ header .logo_container .logo_container__logo {
     -webkit-box-orient: vertical
 }
 
+.menu_category .menu_all--cards:hover .menu_all--cards-body h3 {
+ max-width:150px;
+ overflow:hidden;
+ text-overflow: ellipsis;
+ white-space: nowrap;
+}
+
+.menu_category .menu_all--cards:hover .menu_all--cards-body p {
+    max-width:150px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+   }
+   
+
 .menu_all--cards:hover .menu_all--check,
 .menu_all--cards:active .menu_all--check {
     background-color: #99e2d0;
