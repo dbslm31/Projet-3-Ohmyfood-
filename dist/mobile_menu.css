@@ -189,7 +189,7 @@ header .logo_container .logo_container__logo {
 }
 
 .menu_category .menu_all--cards .menu_all--cards-body p {
-    max-width: 255px!important;
+    width: 255px;
     font-size: 13.5px;
     overflow: hidden;
     text-overflow: ellipsis;
